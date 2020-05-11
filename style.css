@@ -1,13 +1,11 @@
-* {
-  box-sizing: border-box;
-}
+
 body {
   background-color: #f3f3f3;
 }
 #container {
   margin: auto;
-  width: 650px;
-  height: 650px;
+  width: 640px;
+  height: 640px;
   background-color: white;
   border: 5px solid black;
   display: flex;
