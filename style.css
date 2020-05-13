@@ -1,4 +1,6 @@
-
+* {
+  outline: none;
+}
 body {
   background-color: #f3f3f3;
 }
@@ -19,4 +21,12 @@ body {
   width: 640px;
   height: 100px;
   text-align: center;
+}
+#clear {
+  background-color: gray;
+  border: none;
+  padding: 10px 15px;
+  margin-top: 25px;
+  border-radius: 4px;
+  color: #f3f3f3;
 }
