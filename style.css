@@ -14,3 +14,9 @@ body {
 .highlight {
   background-color: black;
 }
+#control {
+  margin: 0 auto;
+  width: 640px;
+  height: 100px;
+  text-align: center;
+}
