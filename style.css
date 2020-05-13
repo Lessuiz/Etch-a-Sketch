@@ -11,10 +11,6 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
-.square {
-  width: 40px;
-  height: 40px;
-}
 .highlight {
   background-color: black;
 }
