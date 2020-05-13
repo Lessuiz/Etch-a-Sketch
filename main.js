@@ -9,7 +9,10 @@ function createDivs() {
     newSquare.style.width = `${640/size}px`
     newSquare.style.height = `${640/size}px`
     newSquare.addEventListener('mouseover', () => {
-      newSquare.classList.add('highlight');
+      let r = Math.floor(Math.random()*256)
+      let g = Math.floor(Math.random()*256)
+      let b = Math.floor(Math.random()*256)
+      newSquare.style.backgroundColor = 'rgb(' + r + ', ' + g + ', ' + b + ')';
     });
     newSquare.classList.add('square');
     container.appendChild(newSquare);

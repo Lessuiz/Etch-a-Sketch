@@ -13,9 +13,6 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
-.highlight {
-  background-color: black;
-}
 #control {
   margin: 0 auto;
   width: 640px;
