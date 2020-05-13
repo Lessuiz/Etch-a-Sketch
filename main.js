@@ -20,7 +20,13 @@ function clearContainer() {
   container.innerHTML = "";
   size = prompt("Insira o tamanho: ")
   if (size > 64) {
-    
+    alert('Insira um número menor.')
+    clearContainer()
+  }else if (size < 1) {
+    alert('Insira um número maior.')
+    clearContainer()
+  }else {
+    createDivs()
   }
 };
 
