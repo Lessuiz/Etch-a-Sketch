@@ -8,15 +8,18 @@ function createDivs() {
     let newSquare = document.createElement('div')
     newSquare.style.width = `${640/size}px`
     newSquare.style.height = `${640/size}px`
-    newSquare.addEventListener('mouseover', () => {
-      let r = Math.floor(Math.random()*256)
-      let g = Math.floor(Math.random()*256)
-      let b = Math.floor(Math.random()*256)
-      newSquare.style.backgroundColor = 'rgb(' + r + ', ' + g + ', ' + b + ')'
-    })
+    newSquare.addEventListener('mouseover', colorDivs)
     newSquare.classList.add('square')
     container.appendChild(newSquare)
   }
+}
+
+function colorDivs(e) {
+  let r = Math.floor(Math.random()*256)
+  let g = Math.floor(Math.random()*256)
+  let b = Math.floor(Math.random()*256)
+  e.target.style.backgroundColor = 'rgb(' + r + ', ' + g + ', ' + b + ')'
+  e.target.removeEventListener('mouseover', colorDivs)
 }
 
 function clearContainer() {
